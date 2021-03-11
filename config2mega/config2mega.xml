@@ -24,7 +24,11 @@ PLEASE USE WITH CAUTION!!</Overview>
   <DateInstalled>1615449119</DateInstalled>
   <DonateText>If you like my work please consider donating.</DonateText>
   <DonateLink>https://www.paypal.me/husainalhadad</DonateLink>
-  <Description>Keep your Unraid configuration files synced with Mega.nz</Description>
+  <Description>Keep your Unraid configuration files synced with Mega.nz&#xD;
+&#xD;
+/boot/config/ volume is by default set to read-only to avoid data loss.&#xD;
+&#xD;
+PLEASE USE WITH CAUTION!!</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
