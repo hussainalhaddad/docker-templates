@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/hussainalhaddad/docker-templates/tree/master/config2mega</Support>
+  <Support>https://github.com/hussainalhaddad/docker-templates</Support>
   <Project>https://mega.nz/</Project>
   <Overview>Keep your Unraid configuration files synced with Mega.nz</Overview>
   <Category>Backup: Cloud:</Category>
