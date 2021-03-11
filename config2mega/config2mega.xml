@@ -13,7 +13,7 @@
   <Category>Backup: Cloud:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://github.com/hussainalhaddad/docker-templates/blob/master/config2mega/icon.png</Icon>
+  <Icon>https://github.com/hussainalhaddad/docker-templates/raw/master/config2mega/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
