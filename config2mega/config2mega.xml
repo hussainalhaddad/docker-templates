@@ -58,6 +58,6 @@
   <Config Name="Email" Target="LOGIN" Default="" Mode="" Description="Container Variable: LOGIN" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Password" Target="PASS" Default="" Mode="" Description="Container Variable: PASS" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="Remote Folder" Target="REMOTE" Default="unraid/boot/config" Mode="" Description="Container Variable: REMOTE" Type="Variable" Display="always" Required="true" Mask="false">unraid/boot/config</Config>
-  <Config Name="Unraid Config Folder" Target="/home/unraidconfig" Default="/boot/config/" Mode="rw" Description="Container Path: /home/unraidconfig" Type="Path" Display="advanced" Required="true" Mask="false">/boot/config/</Config>
+  <Config Name="Unraid Config Folder" Target="/home/unraidconfig" Default="/boot/config/" Mode="ro" Description="Container Path: /home/unraidconfig" Type="Path" Display="advanced" Required="true" Mask="false">/boot/config/</Config>
   <Config Name="Mega config folder" Target="/root/.megaCmd" Default="/mnt/user/appdata/Config2Mega/config" Mode="rw" Description="Container Path: /root/.megaCmd" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/Config2Mega/config</Config>
 </Container>
