@@ -11,7 +11,7 @@
   <Project>https://mega.nz/</Project>
   <Overview>Keep your Unraid configuration files synced with Mega.nz&#xD;
 &#xD;
-/boot/config/ volume is by default set to read-only to avoid data loss.&#xD;
+/boot/config/ volume is by default mounted as read-only to avoid data loss.&#xD;
 &#xD;
 PLEASE USE WITH CAUTION!!</Overview>
   <Category>Backup: Cloud:</Category>
