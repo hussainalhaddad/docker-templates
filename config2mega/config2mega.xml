@@ -9,7 +9,11 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/hussainalhaddad/docker-templates</Support>
   <Project>https://mega.nz/</Project>
-  <Overview>Keep your Unraid configuration files synced with Mega.nz</Overview>
+  <Overview>Keep your Unraid configuration files synced with Mega.nz&#xD;
+&#xD;
+/boot/config/ volume is by default set to read-only to avoid data loss.&#xD;
+&#xD;
+PLEASE USE WITH CAUTION!!</Overview>
   <Category>Backup: Cloud:</Category>
   <WebUI/>
   <TemplateURL/>
