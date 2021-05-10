@@ -10,7 +10,7 @@
   <Support>https://github.com/hussainalhaddad/docker-templates/issues</Support>
   <Project>https://tailscale.com/</Project>
   <Overview>Tailscale is a zero config VPN for building secure networks.</Overview>
-  <Changes>Updated to version 1.6.0</Changes>
+  <Changes>Updated to version 1.8.2</Changes>
   <Category>Network:Management Network:VPN</Category>
   <WebUI>https://login.tailscale.com/admin</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/hussainalhaddad/docker-templates/master/tailscale/tailscale.xml</TemplateURL>
