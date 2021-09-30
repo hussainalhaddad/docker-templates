@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MyJDownloader</Name>
+  <Repository>jaymoulin/jdownloader</Repository>
+  <Registry>https://hub.docker.com/r/jaymoulin/jdownloader</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/hussainalhaddad/docker-templates/issues</Support>
+  <Project>https://jdownloader.org/home/index</Project>
+  <Overview>This image allows you to have JDownloader 2 easily installed and controlled via https://my.jdownloader.org/, thanks to Docker. No cluncky and rusty VNC sessions here!</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/hussainalhaddad/docker-templates/raw/master/myjdownloader/logo.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1633015362</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This image allows you to have JDownloader 2 easily installed and controlled via https://my.jdownloader.org/, thanks to Docker. No cluncky and rusty VNC sessions here!</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3129</HostPort>
+        <ContainerPort>3129</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jdownloader2/cfg</HostDir>
+      <ContainerDir>/opt/JDownloader/cfg</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jdownloader2/logs</HostDir>
+      <ContainerDir>/opt/JDownloader/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/downloads/</HostDir>
+      <ContainerDir>/opt/JDownloader/Downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>MYJD_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>MYJD_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Unraid</Value>
+      <Name>MYJD_DEVICE_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/mnt/user/downloads/</Value>
+      <Name>XDG_DOWNLOAD_DIR</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="3129" Default="" Mode="tcp" Description="Container Port: 3129" Type="Port" Display="always" Required="true" Mask="false">3129</Config>
+  <Config Name="MYJD_USER" Target="MYJD_USER" Default="" Mode="" Description="Container Variable: MYJD_USER" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MYJD_PASSWORD" Target="MYJD_PASSWORD" Default="" Mode="" Description="Container Variable: MYJD_PASSWORD" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="MYJD_DEVICE_NAME" Target="MYJD_DEVICE_NAME" Default="" Mode="" Description="This device name in my.jdownloader.org" Type="Variable" Display="always" Required="true" Mask="false">Unraid</Config>
+  <Config Name="XDG_DOWNLOAD_DIR" Target="XDG_DOWNLOAD_DIR" Default="" Mode="" Description="Downloads folder ENV" Type="Variable" Display="always" Required="true" Mask="false">/mnt/user/downloads/</Config>
+  <Config Name="Config folder" Target="/opt/JDownloader/cfg" Default="" Mode="rw" Description="Container Path: /opt/JDownloader/cfg" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jdownloader2/cfg</Config>
+  <Config Name="Logs folder" Target="/opt/JDownloader/logs" Default="" Mode="rw" Description="Container Path: /opt/JDownloader/logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jdownloader2/logs</Config>
+  <Config Name="Downloads folder" Target="/opt/JDownloader/Downloads" Default="" Mode="rw" Description="Container Path: /opt/JDownloader/Downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/</Config>
