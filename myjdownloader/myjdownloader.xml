@@ -79,3 +79,4 @@
   <Config Name="Config folder" Target="/opt/JDownloader/cfg" Default="" Mode="rw" Description="Container Path: /opt/JDownloader/cfg" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jdownloader2/cfg</Config>
   <Config Name="Logs folder" Target="/opt/JDownloader/logs" Default="" Mode="rw" Description="Container Path: /opt/JDownloader/logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jdownloader2/logs</Config>
   <Config Name="Downloads folder" Target="/opt/JDownloader/Downloads" Default="" Mode="rw" Description="Container Path: /opt/JDownloader/Downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/</Config>
+</Container>
