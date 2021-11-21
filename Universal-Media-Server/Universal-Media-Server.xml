@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Universal-Media-Server</Name>
+  <Repository>universalmediaserver/ums</Repository>
+  <Registry>https://hub.docker.com/r/universalmediaserver/ums</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/hussainalhaddad/docker-templates</Support>
+  <Project>https://www.universalmediaserver.com/</Project>
+  <Overview>Universal Media Server is a DLNA-compliant UPnP Media Server. It is capable of sharing video, audio and images between most modern devices. It was originally based on PS3 Media Server by shagrath, in order to ensure greater stability and file-compatibility.&#xD;
+&#xD;
+This is a headless install, you need to edit the file UMS.conf in oder to configure it.&#xD;
+&#xD;
+Refer to the default file below&#xD;
+&#xD;
+https://raw.githubusercontent.com/UniversalMediaServer/UniversalMediaServer/master/src/main/external-resources/UMS.conf&#xD;
+&#xD;
+Note: you may need to stop the container before editing the config file, otherwise your changes might not get saved.</Overview>
+  <Category>MediaServer:Video MediaServer:Music MediaServer:Photos Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:9001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.universalmediaserver.com/assets/img/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1637488462</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Universal Media Server is a DLNA-compliant UPnP Media Server. It is capable of sharing video, audio and images between most modern devices. It was originally based on PS3 Media Server by shagrath, in order to ensure greater stability and file-compatibility.&#xD;
+&#xD;
+This is a headless install, you need to edit the file UMS.conf in oder to configure it.&#xD;
+&#xD;
+Refer to the default file below&#xD;
+&#xD;
+https://raw.githubusercontent.com/UniversalMediaServer/UniversalMediaServer/master/src/main/external-resources/UMS.conf&#xD;
+&#xD;
+Note: you may need to stop the container before editing the config file, otherwise your changes might not get saved.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9001</HostPort>
+        <ContainerPort>9001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5002</HostPort>
+        <ContainerPort>5002</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1044</HostPort>
+        <ContainerPort>1044</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ums</HostDir>
+      <ContainerDir>/root/.config/UMS/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Media" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="WebUI" Target="9001" Default="" Mode="tcp" Description="Container Port: 9001" Type="Port" Display="always" Required="true" Mask="false">9001</Config>
+  <Config Name="Port 5002" Target="5002" Default="" Mode="tcp" Description="Container Port: 5002" Type="Port" Display="always" Required="true" Mask="false">5002</Config>
+  <Config Name="Port 1044" Target="1044" Default="" Mode="tcp" Description="Container Port: 1044" Type="Port" Display="always" Required="true" Mask="false">1044</Config>
+  <Config Name="Config" Target="/root/.config/UMS/" Default="" Mode="rw" Description="Container Path: /root/.config/UMS/" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/ums</Config>
+</Container>
