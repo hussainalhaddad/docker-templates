@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TinyMediaManager3</Name>
+  <Repository>romancin/tinymediamanager:latest</Repository>
+  <Registry>https://hub.docker.com/r/coolasice1999/tmm</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/hussainalhaddad/docker-templates</Support>
+  <Project>https://www.tinymediamanager.org/</Project>
+  <Overview>tinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server. Due to the fact that it is written in Java, tinyMediaManager will run on Windows, Linux and macOS (and possible more OS).</Overview>
+  <Category>MediaApp:Video MediaApp:Other MediaServer:Video MediaServer:Other Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/hussainalhaddad/docker-templates/raw/master/tinymediamanager/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1637832879</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>tinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server. Due to the fact that it is written in Java, tinyMediaManager will run on Windows, Linux and macOS (and possible more OS).</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5800</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/tmm</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>100</Value>
+      <Name>GROUP_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Asia/Bahrain</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>KEEP_APP_RUNNING</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1280</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>768</Value>
+      <Name>DISPLAY_HEIGHT	</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="ConfigDir" Target="/config" Default="/mnt/user/appdata/tmm" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/tmm</Config>
+  <Config Name="MediaDir" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="GROUP_ID" Target="GROUP_ID" Default="" Mode="" Description="Container Variable: GROUP_ID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="USER_ID" Target="USER_ID" Default="" Mode="" Description="Container Variable: USER_ID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">1000</Config>
+  <Config Name="Timezone" Target="TZ" Default="Asia/Bahrain" Mode="" Description="Full list:&#13;&#10;&#13;&#10;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="false" Mask="false">Asia/Bahrain</Config>
+  <Config Name="WebUI port" Target="5800" Default="5800" Mode="tcp" Description="Container Port: 5800" Type="Port" Display="always" Required="true" Mask="false">5800</Config>
+  <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="" Mode="" Description="Container Variable: KEEP_APP_RUNNING" Type="Variable" Display="advanced-hide" Required="false" Mask="false">1</Config>
+  <Config Name="DISPLAY_WIDTH" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Container Variable: DISPLAY_WIDTH" Type="Variable" Display="advanced-hide" Required="true" Mask="false">1280</Config>
+  <Config Name="DISPLAY_HEIGHT&#9;" Target="DISPLAY_HEIGHT&#9;" Default="768" Mode="" Description="Container Variable: DISPLAY_HEIGHT&#9;" Type="Variable" Display="advanced-hide" Required="true" Mask="false">768</Config>
+</Container>
