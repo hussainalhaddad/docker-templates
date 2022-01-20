@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Appsmith</Name>
+  <Repository>appsmith/appsmith-ce</Repository>
+  <Registry>https://hub.docker.com/r/appsmith/appsmith-ce</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/hussainalhaddad/docker-templates</Support>
+  <Project>https://www.appsmith.com/</Project>
+  <Overview>Quickly build any custom business software with pre-built UI widgets that connect to any data source. Control everything with JavaScript.</Overview>
+  <Category>Productivity: Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/hussainalhaddad/docker-templates/raw/master/appsmith/appsmith.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1642663651</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Quickly build any custom business software with pre-built UI widgets that connect to any data source. Control everything with JavaScript.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8182</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort/>
+        <ContainerPort>9001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/appsmith</HostDir>
+      <ContainerDir>/appsmith-stacks</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI Port" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8182</Config>
+  <Config Name="Data" Target="/appsmith-stacks" Default="" Mode="rw" Description="Container Path: /appsmith-stacks" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/appsmith</Config>
+  <Config Name="Supervisor Port" Target="9001" Default="" Mode="tcp" Description="Container Port: 9001" Type="Port" Display="advanced" Required="false" Mask="false"/>
+</Container>
