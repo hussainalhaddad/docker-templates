@@ -47,6 +47,11 @@
       <ContainerDir>/opt/JDownloader/Downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/tmp/JDownloader</HostDir>
+      <ContainerDir>/opt/JDownloader/app/tmp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
