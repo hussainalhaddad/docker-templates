@@ -29,7 +29,12 @@ eg: Define complex commands with lots of preset arguments, and turn a few argume
   <DateInstalled>1663774520</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires/>
+    <Requires>NOTE: OliveTin is controlled by a config.yaml file, it will not start until the file is created.&#xD;
+&#xD;
+Please read the docs for more details.&#xD;
+&#xD;
+https://docs.olivetin.app/config.html
+  </Requires>
   <Config Name="WebUI" Target="1337" Default="1337" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1337</Config>
   <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/olivetin/config</Config>
 </Container>
