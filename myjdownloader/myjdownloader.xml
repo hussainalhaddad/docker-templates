@@ -20,12 +20,6 @@
   <DateInstalled>1633015362</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>NOTE: OliveTin is controlled by a config.yaml file, it will not start until the file is created.&#xD;
-&#xD;
-Please read the docs for more details.&#xD;
-&#xD;
-https://docs.olivetin.app/config.html
-  </Requires>
   <Description>This image allows you to have JDownloader 2 easily installed and controlled via https://my.jdownloader.org/, thanks to Docker. No cluncky and rusty VNC sessions here!</Description>
   <Networking>
     <Mode>bridge</Mode>
