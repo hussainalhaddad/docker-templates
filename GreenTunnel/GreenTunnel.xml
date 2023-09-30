@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>GreenTunnel</Name>
+  <Repository>sadeghhayeri/green-tunnel</Repository>
+  <Registry>https://hub.docker.com/r/sadeghhayeri/green-tunnel</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/SadeghHayeri/GreenTunnel</Support>
+  <Project>https://github.com/SadeghHayeri/GreenTunnel</Project>
+  <Overview>GreenTunnel is a proxy server that bypasses DPI (Deep Packet Inspection) systems found in many ISPs (Internet Service Providers) which block access to certain websites.</Overview>
+  <Category>Network:Proxy Network:VPN Network:Privacy Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SadeghHayeri/GreenTunnel/master/assets/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1696084691</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Proxy Port" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8111</Config>
+</Container>
