@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>spoofdpi</Name>
+  <Name>SpoofDPI</Name>
   <Repository>hussainalhaddad/spoofdpi</Repository>
   <Registry>https://hub.docker.com/r/hussainalhaddad/spoofdpi</Registry>
   <Network>bridge</Network>
