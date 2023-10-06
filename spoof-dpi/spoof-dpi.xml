@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>spoofdpi</Name>
+  <Repository>hussainalhaddad/spoofdpi</Repository>
+  <Registry>https://hub.docker.com/r/hussainalhaddad/spoofdpi</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/hussainalhaddad/docker-templates</Support>
+  <Project>https://github.com/xvzc/SpoofDPI</Project>
+  <Overview>A simple and fast software designed to bypass Deep Packet Inspection&#xD;
+&#xD;
+</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1696607577</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Proxy Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8111</Config>
+  <Config Name="DNS Server" Target="DNS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">1.1.1.1</Config>
+  <Config Name="Binding IP" Target="ADDR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">0.0.0.0</Config>
+  <Config Name="Debug" Target="DEBUG" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+</Container>
