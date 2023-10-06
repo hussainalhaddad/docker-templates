@@ -12,14 +12,14 @@
   <Overview>A simple and fast software designed to bypass Deep Packet Inspection&#xD;
 &#xD;
 </Overview>
-  <Category/>
+  <Category>Network:Proxy Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://github.com/hussainalhaddad/docker-templates/blob/master/spoof-dpi/s.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1696607577</DateInstalled>
+  <DateInstalled>1696609501</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
