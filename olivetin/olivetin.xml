@@ -22,7 +22,7 @@ eg: Define complex commands with lots of preset arguments, and turn a few argume
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:1337]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/OliveTin/OliveTin/raw/main/webui/OliveTinLogo.png</Icon>
+  <Icon>https://github.com/OliveTin/OliveTin/raw/main/webui.dev/OliveTinLogo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
