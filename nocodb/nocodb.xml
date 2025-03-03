@@ -15,7 +15,7 @@ This template uses SQLite setup by default. If you need to coonect to external D
   <Category>Productivity: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/hussainalhaddad/docker-templates/raw/master/nocodb/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/nocodb/nocodb/develop/packages/nc-gui/assets/img/icons/512x512.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
